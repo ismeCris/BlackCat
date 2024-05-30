@@ -3,13 +3,24 @@ package model.Service;
 import model.Entity.Usuario;
 import model.Repository.UsuarioRepository;
 
-import javax.persistence.EntityManager;
+import java.util.List;
 
 public class UsuarioService {
 
+    private UsuarioRepository usuarioRepository;
 
-    public static Usuario login(String nome, String senha){
-        Usuario user = UsuarioRepository.login(nome, senha);
+    // Construtor para inicializar o repositório
+    public UsuarioService() {
+        this.usuarioRepository = new UsuarioRepository();
+    }
+
+    public  void deleteUser(long id){
+        usuarioRepository.delete(id);
+    }
+
+
+    public  Usuario login(String nome, String senha){
+        Usuario user = usuarioRepository.login(nome, senha);
         if(user !=null){
             System.out.println("Login bem-sucedido para o usuario:" + nome);
         }else {
@@ -18,4 +29,9 @@ public class UsuarioService {
 
         return user;
     }
+
+    public List<Usuario> findAll(){
+        return usuarioRepository.findAll();
+    }
+
 }
