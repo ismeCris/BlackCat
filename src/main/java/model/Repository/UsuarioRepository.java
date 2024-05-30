@@ -8,7 +8,18 @@ import java.util.List;
 
 public class UsuarioRepository  implements  BasicCrud{
 
-  EntityManager em = Persistence.createEntityManagerFactory("BancoPie").createEntityManager();
+    private EntityManager em;
+
+    public UsuarioRepository(EntityManager em) {
+        this.em = em;
+    }
+
+    public Usuario findBysenha(String senha) {
+        Query query = em.createQuery("SELECT u FROM Usuario u WHERE u.senha = :senha");
+        query.setParameter("senha", senha);
+        List<Usuario> usuarios = query.getResultList();
+        return usuarios.isEmpty() ? null : usuarios.get(0);
+    }
 
     @Override
     public Object create(Object object) {
@@ -58,6 +69,7 @@ public class UsuarioRepository  implements  BasicCrud{
         return null;
     }
 
+    //login
     public  Usuario login(String nome, String senha){
         try{
             TypedQuery<Usuario> query = em.createQuery("SELECT u FROM Usuario u WHERE u.nome = :nome AND u.senha = :senha", Usuario.class);
@@ -77,6 +89,7 @@ public class UsuarioRepository  implements  BasicCrud{
         }
     }
 
+    //listar usuario
     public  List<Usuario> findAll(){
         return em.createQuery("SELECT u FROM Usuario u", Usuario.class).getResultList();
     }

@@ -51,7 +51,7 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public boolean isUserRole() {
+    public boolean getUserRole() {
         return userRole;
     }
 
