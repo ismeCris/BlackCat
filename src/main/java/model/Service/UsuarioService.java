@@ -45,6 +45,7 @@ public class UsuarioService {
     public  void updateUser(Usuario usuario){
         usuarioRepository.update(usuario);
     }
+    //buscar por id
     public Usuario findUserById(long id) {
         return (Usuario) usuarioRepository.findById(id);
     }

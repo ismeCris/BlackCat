@@ -58,4 +58,9 @@ public class Usuario {
     public void setUserRole(boolean userRole) {
         this.userRole = userRole;
     }
+    public boolean isUserRole() {
+        return userRole;
+    }
+
+
 }

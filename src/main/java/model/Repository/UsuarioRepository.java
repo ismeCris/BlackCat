@@ -42,8 +42,23 @@ public class UsuarioRepository  implements  BasicCrud{
     public Object update(Object object) {
         Usuario user = (Usuario) object;
 
+
+        // Verificar se a nova senha já está sendo usada por outro usuário
+        Query query = em.createQuery("SELECT u FROM Usuario u WHERE u.senha = :senha AND u.id != :userId");
+        System.out.println("Consulta SQL: " + query.unwrap(org.hibernate.query.Query.class).getQueryString());
+        query.setParameter("senha", user.getSenha());
+        query.setParameter("userId", user.getId());
+
+        List<Usuario> usuariosComMesmaSenha = query.getResultList();
+
+        if (usuariosComMesmaSenha.size() > 1 || (usuariosComMesmaSenha.size() == 1 && usuariosComMesmaSenha.get(0).getId() != user.getId())) {
+            System.out.println("A senha fornecida já está sendo usada por outro usuário. A senha não foi alterada.");
+            return null;
+        }
+
+
         em.getTransaction().begin();
-        em.persist(user);
+        em.merge(user);
         em.getTransaction().commit();
 
         return null;

@@ -1,7 +1,14 @@
 package model.Entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "forma_pagamento")
 public class FormaPagamento {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Long id;
+	@Column
 	String tipo;
 	
 	public FormaPagamento() {

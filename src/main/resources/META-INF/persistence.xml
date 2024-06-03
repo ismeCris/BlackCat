@@ -16,14 +16,14 @@
             <property name="javax.persistence.jdbc.driver"
                       value="com.mysql.cj.jdbc.Driver" />
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:mysql://localhost:3306/pie" />
+                      value="jdbc:mysql://localhost:3306/integrador02" />
             <property name="javax.persistence.jdbc.user" value="root" />
             <property name="javax.persistence.jdbc.password" value="root" />
 
             <!-- Configurações do Hibernate -->
             <property name="hibernate.dialect"
                       value="org.hibernate.dialect.MySQLDialect" />
-            <property name="hibernate.show_sql" value="true" /> <!-- Para exibir
+            <property name="hibernate.show_sql" value="false" /> <!-- Para exibir
 			SQL no console -->
             <property name="hibernate.hbm2ddl.auto" value="none" /> <!--
 			Atualiza o esquema do banco de dados -->
