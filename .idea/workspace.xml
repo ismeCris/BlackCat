@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Entity/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Entity/Vendas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Entity/Vendas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Service/UsuarioService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/exibirDados.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
@@ -49,12 +48,12 @@
     &quot;assignee&quot;: &quot;ismycris&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ismycris/BlackCat.git&quot;,
-    &quot;accountId&quot;: &quot;03351ffb-3fdb-4116-91a1-6db9046454f5&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Grupo-16-Eng-Software/BlackCatJava.git",
+    "accountId": "03351ffb-3fdb-4116-91a1-6db9046454f5"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -64,17 +63,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Cristiely/OneDrive/Área de Trabalho/Integrador02&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Cristiely/IdeaProjects/BlackCat/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Cristiely/OneDrive/Área de Trabalho/Integrador02",
+    "onboarding.tips.debug.path": "C:/Users/Cristiely/IdeaProjects/BlackCat/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Cristiely\IdeaProjects\BlackCat\src\main\resources" />
@@ -131,6 +130,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/view/Main.java</url>
+          <line>198</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/view/Main.java</url>
+          <line>202</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/view/Main.java</url>
+          <line>406</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/view/Main.java</url>
+          <line>433</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
