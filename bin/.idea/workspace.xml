@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6eac4571-3ccf-4c5f-af04-b43df27a4212" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/FormaPagamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FormaPagamentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProdutoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Entity/Vendas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Entity/Vendas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Repository/ProdutoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Repository/ProdutoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Repository/VendaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Repository/VendaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Service/FormaPagamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Service/FormaPagamentoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Service/VendaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Service/VendaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UsuarioController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,20 +64,7 @@
       <recent name="C:\Users\Cristiely\IdeaProjects\BlackCat\src\main\java\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LoginFrame">
-    <configuration name="LoginFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.LoginFrame" />
-      <module name="BlackCat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.Main" />
       <module name="BlackCat" />
@@ -103,7 +80,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoginFrame" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -140,17 +116,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/view/Main.java</url>
-          <line>198</line>
+          <line>196</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/view/Main.java</url>
-          <line>202</line>
+          <line>200</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/view/Main.java</url>
-          <line>433</line>
+          <line>404</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/view/Main.java</url>
+          <line>431</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>

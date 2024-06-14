@@ -50,4 +50,23 @@ public class VendaService {
         vendaRepository.saveProdutoHasVenda(produtoHasVenda);
     }
 
+    public void registrarVenda(Vendas venda, Long idUsuario) {
+        
+        if (venda.getUsuario() == null || venda.getUsuario().getId() != idUsuario) {
+            Usuario usuario = new Usuario();
+            usuario.setId(idUsuario); 
+            venda.setUsuario(usuario);
+        }
+
+        try {
+            vendaRepository.create(venda); 
+            System.out.println("Venda registrada com sucesso.");
+         
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Erro ao registrar venda: " + e.getMessage());
+           
+            throw new RuntimeException("Erro ao registrar venda", e);
+        }
+    }
 }

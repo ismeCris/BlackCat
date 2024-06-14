@@ -57,9 +57,14 @@ public class UsuarioRepository  implements  BasicCrud{
         }
 
 
-        em.getTransaction().begin();
+        try {
+			em.getTransaction().begin();
         em.merge(user);
         em.getTransaction().commit();
+		} catch (Exception e) {
+			em.getTransaction().rollback();
+		}
+        
 
         return null;
     }

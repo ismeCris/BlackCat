@@ -72,7 +72,7 @@ public class VendaRepository implements BasicCrud{
         return null;
     }
 
-    public List<Vendas>findALl(){
+    public List<Vendas> findALl(){
         return em.createQuery("SELECT v FROM Vendas v ",Vendas.class).getResultList();
     }
 

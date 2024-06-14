@@ -35,7 +35,7 @@ public class ProdutoController {
 
     //editar produto
     public  void updateProduto(Produtos produto){
-        produtoService.updateProduto(produto);
+         produtoService.updateProduto(produto);
     }
 
      public Produtos findProdutoByid(Long id){

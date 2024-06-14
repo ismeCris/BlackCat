@@ -100,6 +100,13 @@ public class Vendas {
 	public void setItens(List<ProdutoHasVenda> itens) {
 		this.itens = itens;
 	}
+	
+	  public void adicionarProduto(Produtos produto) {
+	        ProdutoHasVenda itemVenda = new ProdutoHasVenda();
+	        itemVenda.setProdutos(produto);
+	        itemVenda.setVendas(this);
+	      //  itensVenda.add(itemVenda);
+	    }
 
 
 }

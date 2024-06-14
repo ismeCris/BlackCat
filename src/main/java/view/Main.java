@@ -291,7 +291,7 @@ public class Main {
             System.out.println("Digite o novo tipo de usuário (ou pressione Enter para manter o atual: " + usuario.getUserRole() + "):");
             String novoUserRole = sc.nextLine();
             if (!novoUserRole.isEmpty()) {
-                // Corrigindo a chamada do método setUserRole
+              
                 boolean novoUserRoleBoolean = Boolean.parseBoolean(novoUserRole);
                 usuario.setUserRole(novoUserRoleBoolean);
             }

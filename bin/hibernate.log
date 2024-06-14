@@ -20,18 +20,3 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-06-03 21:03:55,538 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`integrador02`.`vendas`, CONSTRAINT `vendas_ibfk_1` FOREIGN KEY (`id_usuario_fk`) REFERENCES `usuarios` (`id`))
 2024-06-03 21:09:52,356 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`integrador02`.`vendas`, CONSTRAINT `vendas_ibfk_1` FOREIGN KEY (`id_usuario_fk`) REFERENCES `usuarios` (`id`))
 2024-06-03 21:12:27,513 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`integrador02`.`vendas`, CONSTRAINT `vendas_ibfk_1` FOREIGN KEY (`id_usuario_fk`) REFERENCES `usuarios` (`id`))
-2024-06-13 23:33:20,839 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-13 23:51:10,231 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-13 23:53:03,491 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 00:02:26,120 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 10:01:04,687 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 10:27:00,373 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 10:28:59,921 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 10:30:07,924 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 10:31:02,991 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 10:33:52,055 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 10:49:41,402 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 15:52:05,207 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 15:54:47,211 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 15:59:44,403 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
-2024-06-14 16:03:03,677 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
