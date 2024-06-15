@@ -25,7 +25,7 @@ public class AdminMenuFrame extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					AdminMenuFrame frame = new AdminMenuFrame();
+					AdminMenuFrame frame = new AdminMenuFrame(new Usuario());
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -37,7 +37,7 @@ public class AdminMenuFrame extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public AdminMenuFrame() {
+	public AdminMenuFrame(Usuario usuario) {
 		getContentPane().setBackground(new Color(183, 183, 219));
 		 setTitle("Menu Admin");
 	        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -49,7 +49,7 @@ public class AdminMenuFrame extends JFrame {
 	        btnGerenciarUsuarios.setBounds(302, 298, 145, 46);
 	        btnGerenciarUsuarios.addActionListener(new ActionListener() {
 	            public void actionPerformed(ActionEvent e) {
-	                gerenciarUser();
+	                gerenciarUser(usuario);
 	            }
 	        });
 	        
@@ -66,7 +66,7 @@ public class AdminMenuFrame extends JFrame {
 	        btnGerenciarProdutos.setBounds(488, 298, 145, 46);
 	        btnGerenciarProdutos.addActionListener(new ActionListener() {
 	            public void actionPerformed(ActionEvent e) {
-	                gerenciarProdutos();
+	                gerenciarProdutos(usuario);
 	            }
 	        });
 	        getContentPane().add(btnGerenciarProdutos);
@@ -76,7 +76,7 @@ public class AdminMenuFrame extends JFrame {
 	        btnGerenciarVendas.setBounds(115, 298, 145, 46);
 	        btnGerenciarVendas.addActionListener(new ActionListener() {
 	            public void actionPerformed(ActionEvent e) {
-	                gerenciarVendas();
+	                gerenciarVendas(usuario);
 	            }
 	        });
 	        getContentPane().add(btnGerenciarVendas);
@@ -103,19 +103,18 @@ public class AdminMenuFrame extends JFrame {
 	        	  lblTitle.setFont(new Font("Tahoma", Font.BOLD, 16));
 	    }
 
-	    private void gerenciarUser() {
-	    	  new GerenciarUser().setVisible(true);
+	    private void gerenciarUser(Usuario usuario) {
+	    	  new GerenciarUser(usuario).setVisible(true);
 	    	  dispose();
 	    }
 
-	    private void gerenciarProdutos() {
-	    	 new GerenciarProdutos().setVisible(true);
+	    private void gerenciarProdutos(Usuario usuario) {
+	    	 new GerenciarProdutos(usuario).setVisible(true);
 	    	  dispose();
 	        
 	    }
 
-	    private void gerenciarVendas() {
-	        Usuario usuario = new Usuario(); // Crie ou obtenha o usuário de alguma forma
+	    private void gerenciarVendas(Usuario usuario) {
 	        Venda vendaFrame = new Venda(usuario); // Passe o usuário para o construtor da Venda
 	        vendaFrame.setVisible(true); // Exiba o frame de Venda
 	        dispose(); // Feche o frame atual (provavelmente o frame de login)

@@ -32,10 +32,10 @@ public class Vendas {
 	private List<ProdutoHasVenda> itens;
 
 	public Vendas() {
-		
+
 	}
-	
-	public Vendas(Usuario usuario, FormaPagamento formaPagamento,Long id, float total, LocalDateTime data, Long nfe) {
+
+	public Vendas(Usuario usuario, FormaPagamento formaPagamento, Long id, float total, LocalDateTime data, Long nfe) {
 		this.usuario = usuario;
 		this.formaPagamento = formaPagamento;
 		this.id = id;
@@ -92,7 +92,6 @@ public class Vendas {
 		this.formaPagamento = formaPagamento;
 	}
 
-
 	public List<ProdutoHasVenda> getItens() {
 		return itens;
 	}
@@ -100,13 +99,5 @@ public class Vendas {
 	public void setItens(List<ProdutoHasVenda> itens) {
 		this.itens = itens;
 	}
-	
-	  public void adicionarProduto(Produtos produto) {
-	        ProdutoHasVenda itemVenda = new ProdutoHasVenda();
-	        itemVenda.setProdutos(produto);
-	        itemVenda.setVendas(this);
-	      //  itensVenda.add(itemVenda);
-	    }
-
 
 }

@@ -46,7 +46,7 @@ public class GerenciarUser extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    GerenciarUser frame = new GerenciarUser();
+                    GerenciarUser frame = new GerenciarUser(new Usuario());
                     frame.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -55,7 +55,7 @@ public class GerenciarUser extends JFrame {
         });
     }
 
-    public GerenciarUser() {
+    public GerenciarUser(Usuario usuario) {
         setTitle("Gerenciar Funcionários");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 735, 489);
@@ -108,7 +108,7 @@ public class GerenciarUser extends JFrame {
         JButton btnVoltar = new JButton("Voltar");
         btnVoltar.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
-        		voltarMenuAdm();
+        		voltarMenuAdm(usuario);
         	}
         });
         btnVoltar.setBackground(new Color(197, 197, 226));
@@ -168,9 +168,9 @@ public class GerenciarUser extends JFrame {
   
     }
 
-    private void voltarMenuAdm() {
+    private void voltarMenuAdm(Usuario usuario) {
         dispose();
-        AdminMenuFrame menuadm = new AdminMenuFrame();
+        AdminMenuFrame menuadm = new AdminMenuFrame(usuario);
         menuadm.setVisible(true);
     }
 

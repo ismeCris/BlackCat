@@ -1,23 +1,30 @@
 package view;
 
-import model.Entity.Produtos;
-import model.Repository.ProdutoRepository;
-import model.Service.ProdutoService;
-
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.border.EmptyBorder;
-import javax.swing.table.DefaultTableModel;
-
-import controller.ProdutoController;
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.border.EmptyBorder;
+import javax.swing.table.DefaultTableModel;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.List;
+import controller.ProdutoController;
+import model.Entity.Produtos;
+import model.Entity.Usuario;
+import model.Repository.ProdutoRepository;
+import model.Service.ProdutoService;
 
 public class GerenciarProdutos extends JFrame {
     private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("BancoPie");
@@ -36,7 +43,7 @@ public class GerenciarProdutos extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    GerenciarProdutos frame = new GerenciarProdutos();
+                    GerenciarProdutos frame = new GerenciarProdutos(new Usuario());
                     frame.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -45,7 +52,7 @@ public class GerenciarProdutos extends JFrame {
         });
     }
 
-    public GerenciarProdutos() {
+    public GerenciarProdutos(Usuario usuario) {
         setTitle("Gerenciar Produtos");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 735, 489);
@@ -98,7 +105,7 @@ public class GerenciarProdutos extends JFrame {
         JButton btnVoltar = new JButton("Voltar");
         btnVoltar.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
-        		voltarMenuAdm();
+        		voltarMenuAdm(usuario);
         	}
         });
         btnVoltar.setBackground(new Color(197, 197, 226));
@@ -166,9 +173,9 @@ public class GerenciarProdutos extends JFrame {
             JOptionPane.showMessageDialog(this, "Produto não encontrado para edição.", "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
-    private void voltarMenuAdm() {
+    private void voltarMenuAdm(Usuario usuario) {
         dispose();
-        AdminMenuFrame menuadm = new AdminMenuFrame();
+        AdminMenuFrame menuadm = new AdminMenuFrame(usuario);
         menuadm.setVisible(true);
     }
 

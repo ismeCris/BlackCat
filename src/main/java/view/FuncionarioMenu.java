@@ -1,9 +1,19 @@
 package view;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import model.Entity.Usuario;
 
 public class FuncionarioMenu extends JFrame {
 
@@ -17,7 +27,7 @@ public class FuncionarioMenu extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					FuncionarioMenu frame = new FuncionarioMenu();
+					FuncionarioMenu frame = new FuncionarioMenu(new Usuario());
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -29,7 +39,7 @@ public class FuncionarioMenu extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public FuncionarioMenu() {
+	public FuncionarioMenu(Usuario usuario) {
 		getContentPane().setBackground(new Color(183, 183, 219));
 		 setTitle("Menu Admin");
 	        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

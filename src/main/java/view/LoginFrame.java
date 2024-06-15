@@ -105,9 +105,9 @@ public class LoginFrame extends JFrame {
                  if (usuarioLogado != null) {
                      System.out.println("Bem-Vind@, " + usuarioLogado.getNome() + "!");
                      if (usuarioLogado.isUserRole()) {
-                         new AdminMenuFrame().setVisible(true);
+                         new AdminMenuFrame(usuarioLogado).setVisible(true);
                      } else {
-                         new FuncionarioMenu().setVisible(true);
+                         new FuncionarioMenu(usuarioLogado).setVisible(true);
                      }
                      dispose(); // fecha o login 
                  } else {

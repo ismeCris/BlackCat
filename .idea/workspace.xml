@@ -7,17 +7,13 @@
     <list default="true" id="6eac4571-3ccf-4c5f-af04-b43df27a4212" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/FormaPagamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FormaPagamentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProdutoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Entity/Vendas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Entity/Vendas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Repository/ProdutoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Repository/ProdutoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Repository/VendaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Repository/VendaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Service/FormaPagamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Service/FormaPagamentoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Service/VendaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Service/VendaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/AdminMenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AdminMenuFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/FuncionarioMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/FuncionarioMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/GerenciarProdutos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GerenciarProdutos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/GerenciarUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GerenciarUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Venda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +53,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.LoginFrame.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
