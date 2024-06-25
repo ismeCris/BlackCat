@@ -6,6 +6,9 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -14,10 +17,15 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import model.Entity.Usuario;
+import model.Repository.VendaRepository;
+import model.Service.VendaService;
 
 public class FuncionarioMenu extends JFrame {
-
+	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("BancoPie");
+	private static EntityManager em = emf.createEntityManager();
 	private static final long serialVersionUID = 1L;
+	private static VendaRepository vendaRepository = new VendaRepository(em);
+	private static VendaService vendaService = new VendaService(vendaRepository);
 	//private JPanel contentPane;
 
 	/**
@@ -46,12 +54,12 @@ public class FuncionarioMenu extends JFrame {
 	        setBounds(100, 100, 809, 494);
 	        getContentPane().setLayout(null);
 	        
-	        JButton btnGerenciarUsuarios = new JButton("Visualizar Produtos");
-	        btnGerenciarUsuarios.setBackground(new Color(191, 191, 223));
-	        btnGerenciarUsuarios.setBounds(302, 298, 145, 46);
-	        btnGerenciarUsuarios.addActionListener(new ActionListener() {
+	        JButton btnVisualizarProdutos = new JButton("Visualizar Produtos");
+	        btnVisualizarProdutos.setBackground(new Color(191, 191, 223));
+	        btnVisualizarProdutos.setBounds(302, 298, 145, 46);
+	        btnVisualizarProdutos.addActionListener(new ActionListener() {
 	            public void actionPerformed(ActionEvent e) {
-	                gerenciarUser();
+	                visualizarProdutos(usuario);
 	            }
 	        });
 	        
@@ -61,24 +69,24 @@ public class FuncionarioMenu extends JFrame {
 	        getContentPane().add(iconCat);
 	        
 	      
-	        getContentPane().add(btnGerenciarUsuarios);
+	        getContentPane().add(btnVisualizarProdutos);
 
-	        JButton btnGerenciarProdutos = new JButton("Visualizar Vendas");
-	        btnGerenciarProdutos.setBackground(new Color(191, 191, 223));
-	        btnGerenciarProdutos.setBounds(488, 298, 145, 46);
-	        btnGerenciarProdutos.addActionListener(new ActionListener() {
+	        JButton btnVisualizarVendas = new JButton("Visualizar Vendas");
+	        btnVisualizarVendas.setBackground(new Color(191, 191, 223));
+	        btnVisualizarVendas.setBounds(488, 298, 145, 46);
+	        btnVisualizarVendas.addActionListener(new ActionListener() {
 	            public void actionPerformed(ActionEvent e) {
-	                gerenciarProdutos();
+	                visualizarVendas();
 	            }
 	        });
-	        getContentPane().add(btnGerenciarProdutos);
+	        getContentPane().add(btnVisualizarVendas);
 
 	        JButton btnGerenciarVendas = new JButton("Realizar Venda");
 	        btnGerenciarVendas.setBackground(new Color(191, 191, 223));
 	        btnGerenciarVendas.setBounds(115, 298, 145, 46);
 	        btnGerenciarVendas.addActionListener(new ActionListener() {
 	            public void actionPerformed(ActionEvent e) {
-	                gerenciarVendas();
+	                gerenciarVendas(usuario);
 	            }
 	        });
 	        getContentPane().add(btnGerenciarVendas);
@@ -105,18 +113,19 @@ public class FuncionarioMenu extends JFrame {
 	        	  lblTitle.setFont(new Font("Tahoma", Font.BOLD, 16));
 	    }
 
-	    private void gerenciarUser() {
-	        // Implementar lógica para gerenciar usuários
-	        JOptionPane.showMessageDialog(this, "Gerenciando usuários...");
+	    private void visualizarProdutos(Usuario usuario) {
+	    	new exibirProduto(usuario).setVisible(true);
+	    	  dispose();
 	    }
 
-	    private void gerenciarProdutos() {
-	        // Implementar lógica para gerenciar produtos
-	        JOptionPane.showMessageDialog(this, "Gerenciando produtos...");
+	    private void visualizarVendas() {
+	    	ConsultaVendas consultaVendas = new ConsultaVendas(vendaRepository, vendaService);
+			consultaVendas.setVisible(true);
 	    }
 
-	    private void gerenciarVendas() {
-	        // Implementar lógica para gerenciar vendas
-	        JOptionPane.showMessageDialog(this, "Gerenciando vendas...");
+	    private void gerenciarVendas(Usuario usuario) {
+	        Venda vendaFrame = new Venda(usuario);
+	        vendaFrame.setVisible(true);
+	        dispose(); 
 	    }
 }

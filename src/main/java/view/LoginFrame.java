@@ -57,11 +57,12 @@ public class LoginFrame extends JFrame {
      * Create the frame.
      */
     public LoginFrame() {
+    	getContentPane().setBackground(new Color(255, 255, 255));
     	 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
          setBounds(100, 100, 809, 494);
          getContentPane().setLayout(null);
 
-         JLabel cat = new JLabel("New label");
+         JLabel cat = new JLabel("");
          cat.setBounds(266, 0, 393, 467);
          getContentPane().add(cat);
          cat.setIcon(new ImageIcon("C:\\Users\\Cristiely\\Downloads\\image-removebg-preview (35).png"));

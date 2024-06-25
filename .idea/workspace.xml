@@ -7,12 +7,19 @@
     <list default="true" id="6eac4571-3ccf-4c5f-af04-b43df27a4212" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Entity/Vendas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Entity/Vendas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProdutoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/VendaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/VendaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Entity/FormaPagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Entity/FormaPagamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Entity/ProdutoHasVenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Entity/ProdutoHasVenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Entity/Produtos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Entity/Produtos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Repository/VendaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Repository/VendaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Service/VendaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Service/VendaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/AdminMenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AdminMenuFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/FuncionarioMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/FuncionarioMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/GerenciarProdutos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GerenciarProdutos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/GerenciarUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GerenciarUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Venda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +66,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Cristiely/OneDrive/Área de Trabalho/Integrador02&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Cristiely/OneDrive/Área de Trabalho/BlackCatJava&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Cristiely/IdeaProjects/BlackCat/src/main/java/org/example/Main.java&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }

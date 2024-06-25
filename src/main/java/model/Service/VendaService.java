@@ -46,11 +46,11 @@ public class VendaService {
         vendaRepository.save(venda);
     }
 
-    public void saveProdutoHasVenda(ProdutoHasVenda produtoHasVenda) {
-        vendaRepository.saveProdutoHasVenda(produtoHasVenda);
+    public ProdutoHasVenda saveProdutoHasVenda(ProdutoHasVenda produtoHasVenda) {
+        return vendaRepository.saveProdutoHasVenda(produtoHasVenda);
     }
 
-    public void registrarVenda(Vendas venda, Long idUsuario) {
+    public Vendas registrarVenda(Vendas venda, Long idUsuario) {
         
         if (venda.getUsuario() == null || venda.getUsuario().getId() != idUsuario) {
             Usuario usuario = new Usuario();
@@ -59,8 +59,7 @@ public class VendaService {
         }
 
         try {
-            vendaRepository.create(venda); 
-            System.out.println("Venda registrada com sucesso.");
+            return (Vendas) vendaRepository.create(venda); 
          
         } catch (Exception e) {
             e.printStackTrace();

@@ -49,3 +49,35 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-06-15 08:56:36,689 [AWT-EventQueue-0] ERROR org.hibernate.AssertionFailure - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in model.Entity.ProdutoHasVenda entry (don't flush the Session after an exception occurs)
 2024-06-15 08:56:37,105 [AWT-EventQueue-0] ERROR org.hibernate.AssertionFailure - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in model.Entity.ProdutoHasVenda entry (don't flush the Session after an exception occurs)
 2024-06-15 09:11:19,819 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-17 09:29:55,490 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-17 09:59:53,820 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-17 10:04:19,745 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-17 10:10:05,972 [AWT-EventQueue-0] ERROR org.hibernate.AssertionFailure - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in model.Entity.ProdutoHasVenda entry (don't flush the Session after an exception occurs)
+2024-06-17 10:10:07,688 [AWT-EventQueue-0] ERROR org.hibernate.AssertionFailure - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in model.Entity.ProdutoHasVenda entry (don't flush the Session after an exception occurs)
+2024-06-17 10:10:08,425 [AWT-EventQueue-0] ERROR org.hibernate.AssertionFailure - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in model.Entity.ProdutoHasVenda entry (don't flush the Session after an exception occurs)
+2024-06-24 14:21:31,300 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-24 14:29:33,613 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 10:03:46,254 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 10:16:27,626 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 10:18:05,358 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 11:00:37,297 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 11:18:23,033 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unknown column 'subtotal' in 'field list'
+2024-06-25 11:21:05,369 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unknown column 'subtotal' in 'field list'
+2024-06-25 11:24:22,713 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 11:27:41,556 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 11:44:24,020 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 18:54:20,626 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 19:24:44,284 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 19:28:18,714 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 19:32:01,304 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 19:34:03,093 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 19:39:32,428 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 19:45:27,736 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 19:47:29,375 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 19:49:57,328 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 19:53:58,692 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 19:59:13,556 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 20:01:37,271 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 20:01:37,282 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 20:09:51,573 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+2024-06-25 20:09:51,582 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null

@@ -44,7 +44,7 @@ public class VendaController {
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("BancoPie");
 
     public void saveVenda(Vendas venda) {
-        EntityManager em = emf.createEntityManager();
+        //EntityManager em = emf.createEntityManager();
        /* try {
             em.getTransaction().begin();
             em.persist(venda);
@@ -55,8 +55,8 @@ public class VendaController {
         vendaService.saveVenda(venda);
     }
 
-    public void saveProdutoHasVenda(ProdutoHasVenda produtoHasVenda) {
-        vendaService.saveProdutoHasVenda(produtoHasVenda);
+    public ProdutoHasVenda saveProdutoHasVenda(ProdutoHasVenda produtoHasVenda) {
+        return vendaService.saveProdutoHasVenda(produtoHasVenda);
     }
 
 

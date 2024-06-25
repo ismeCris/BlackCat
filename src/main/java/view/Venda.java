@@ -288,13 +288,15 @@ public class Venda extends JFrame {
 
 		try {
 			// Registra a venda
-			vendaService.registrarVenda(venda, usuarioLogado.getId());
+			
 			
 			// Persistindo a o item da venda
 			for (ProdutoHasVenda item : carrinho) {
 				item.setVendas(venda);
 				vendaController.saveProdutoHasVenda(item);
 			}
+			venda.setItens(carrinho);
+			venda = vendaService.registrarVenda(venda, usuarioLogado.getId());
 
 			if (emitirNFe) {
 				JOptionPane.showMessageDialog(this, "Venda concluída e NFe gerada com sucesso.");
