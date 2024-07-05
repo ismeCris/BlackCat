@@ -46,6 +46,7 @@ public class VendaService {
         vendaRepository.save(venda);
     }
 
+<<<<<<< HEAD
     public ProdutoHasVenda saveProdutoHasVenda(ProdutoHasVenda produtoHasVenda) {
         return vendaRepository.saveProdutoHasVenda(produtoHasVenda);
     }
@@ -68,4 +69,10 @@ public class VendaService {
             throw new RuntimeException("Erro ao registrar venda", e);
         }
     }
+=======
+    public void saveProdutoHasVenda(ProdutoHasVenda produtoHasVenda) {
+        vendaRepository.saveProdutoHasVenda(produtoHasVenda);
+    }
+
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
 }

@@ -44,7 +44,11 @@ public class VendaController {
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("BancoPie");
 
     public void saveVenda(Vendas venda) {
+<<<<<<< HEAD
         //EntityManager em = emf.createEntityManager();
+=======
+        EntityManager em = emf.createEntityManager();
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
        /* try {
             em.getTransaction().begin();
             em.persist(venda);
@@ -55,8 +59,13 @@ public class VendaController {
         vendaService.saveVenda(venda);
     }
 
+<<<<<<< HEAD
     public ProdutoHasVenda saveProdutoHasVenda(ProdutoHasVenda produtoHasVenda) {
         return vendaService.saveProdutoHasVenda(produtoHasVenda);
+=======
+    public void saveProdutoHasVenda(ProdutoHasVenda produtoHasVenda) {
+        vendaService.saveProdutoHasVenda(produtoHasVenda);
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
     }
 
 

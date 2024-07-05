@@ -17,6 +17,10 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+<<<<<<< HEAD
+=======
+import java.util.Date;
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
 import java.util.List;
 import java.util.Scanner;
 
@@ -59,10 +63,18 @@ public class Main {
 
         usuarioLogado = usuarioController.login(nome, senha);
         //UsuarioController usuarioController = new UsuarioController();
+<<<<<<< HEAD
 
         if (usuarioLogado != null) {
             System.out.println("Bem-Vind@, " + usuarioLogado.getNome() + "!");
             if (usuarioLogado.isUserRole()) {
+=======
+        Usuario autenticarUser = usuarioController.login(nome, senha);
+
+        if (autenticarUser != null) {
+            System.out.println("Bem-Vind@, " + autenticarUser.getNome() + "!");
+            if (autenticarUser.isUserRole()) {
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
                 menuAdmin();
             } else {
                 menuFuncionario();
@@ -83,7 +95,11 @@ public class Main {
         while (!sair) {
             System.out.println("===== Menu Funcionário =====");
             System.out.println("-> 1. Ver produtos");
+<<<<<<< HEAD
             System.out.println("-> 2. Realizar venda");
+=======
+            System.out.println("-> 2. Registrar venda");
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
             System.out.println("-> 3. Ver vendas");
             System.out.println("-> 0. Sair");
             System.out.print("Escolha uma opção: ");
@@ -98,7 +114,11 @@ public class Main {
                     menuFuncionario();
                     break;
                 case 2:
+<<<<<<< HEAD
                     RealizarVenda();
+=======
+                    RealizarVendaUser();
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
                     aguardarEnter();
                     menuFuncionario();
                     break;
@@ -122,6 +142,10 @@ public class Main {
     public static void menuAdmin() {
         Scanner sc = new Scanner(System.in);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
         boolean sair = false;
 
         while(!sair) {
@@ -290,7 +314,11 @@ public class Main {
             System.out.println("Digite o novo tipo de usuário (ou pressione Enter para manter o atual: " + usuario.getUserRole() + "):");
             String novoUserRole = sc.nextLine();
             if (!novoUserRole.isEmpty()) {
+<<<<<<< HEAD
               
+=======
+                // Corrigindo a chamada do método setUserRole
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
                 boolean novoUserRoleBoolean = Boolean.parseBoolean(novoUserRole);
                 usuario.setUserRole(novoUserRoleBoolean);
             }
@@ -309,7 +337,11 @@ public class Main {
 //====================================================================================================================
 private static void gerenciarProdutos() {
 
+<<<<<<< HEAD
     System.out.println("=======- Gestao de produtos -=======");
+=======
+    System.out.println("=======- Gestao de funcionarios -=======");
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
     System.out.println("1 - Novo produto");
     System.out.println("2 - Lista de produtos");
     System.out.println("3 - Excluir produto");
@@ -408,14 +440,25 @@ private static void gerenciarProdutos() {
         if (produtos != null){
             System.out.println("Digite o novo nome do produto  (ou pressione Enter para manter o atual: "+ produtos.getNome()+"):");
             String novoNome = sc.nextLine();
+<<<<<<< HEAD
+=======
+            produtos.setNome(novoNome);
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
             if (!novoNome.isEmpty()) {
                 produtos.setNome(novoNome);
             }
 
             System.out.println("Digite a nova descricao do produto (ou pressione Enter para manter o atual: "+ produtos.getDescricao()+"):");
+<<<<<<< HEAD
             String novadescriacao = sc.nextLine();
             if (!novadescriacao.isEmpty()){
                 produtos.setDescricao(novadescriacao);
+=======
+            String novadescriacoa = sc.nextLine();
+            produtos.setDescricao(novadescriacoa);
+            if (!novadescriacoa.isEmpty()) {
+                produtos.setDescricao(novadescriacoa);
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
             }
             System.out.println("Digite o novo preco do produto (ou pressione Enter para manter o atual: " + produtos.getPreco() + "):");
             String novoPrecoStr = sc.nextLine();
@@ -430,9 +473,15 @@ private static void gerenciarProdutos() {
             }
 
             produtoController.updateProduto(produtos);
+<<<<<<< HEAD
             System.out.println("Produtoio atualizado com sucesso!");
         }else {
             System.out.println("Produto com o ID fornecido não encontrado.");
+=======
+            System.out.println("produto atualizado com sucesso!");
+        }else {
+            System.out.println("produto com o ID fornecido não encontrado.");
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
         }
         aguardarEnter();
         gerenciarProdutos();
@@ -452,7 +501,11 @@ private static void gerenciarProdutos() {
 
         switch (opcao) {
             case 1:
+<<<<<<< HEAD
                 RealizarVenda();
+=======
+                RealizarVendaAdm();
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
                 aguardarEnter();
                 GerenciarVendas();
                 break;
@@ -463,10 +516,17 @@ private static void gerenciarProdutos() {
 
                 break;
             case 3:
+<<<<<<< HEAD
                 ConsultarVendas();
                 System.out.println("Digite o ID da venda a ser excluída:");
                 long deleteId = sc.nextLong();
                 sc.nextLine();
+=======
+                System.out.println("Digite o ID da venda a ser excluída:");
+                long deleteId = sc.nextLong();
+                sc.nextLine();
+                ConsultarVendas();
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
                 vendaController.deleteVendaById(deleteId);
                 System.out.println("venda excluído.");
                 aguardarEnter();
@@ -496,7 +556,11 @@ private static void gerenciarProdutos() {
         }
     }
 
+<<<<<<< HEAD
     private static List<ProdutoHasVenda> RealizarVenda() {
+=======
+    private static List<ProdutoHasVenda> RealizarVendaAdm() {
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
         if (usuarioLogado == null) {
             System.out.println("Usuário não autenticado.");
             return new ArrayList<>();
@@ -618,6 +682,131 @@ private static void gerenciarProdutos() {
         return carrinho;
     }
 
+<<<<<<< HEAD
+=======
+    private static List<ProdutoHasVenda> RealizarVendaUser() {
+        if (usuarioLogado == null) {
+            System.out.println("Usuário não autenticado.");
+            return new ArrayList<>();
+        }
+
+        List<ProdutoHasVenda> carrinho = new ArrayList<>();
+        float totalVenda = 0;
+
+        System.out.println("Iniciando uma nova venda para o usuário: " + usuarioLogado.getNome());
+
+        boolean adicionandoItens = true;
+        while (adicionandoItens) {
+            System.out.println("Digite o ID do produto:");
+            long produtoId = sc.nextLong();
+            sc.nextLine();
+            System.out.println("Digite a quantidade:");
+            int quantidade = sc.nextInt();
+            sc.nextLine();
+
+            Produtos produto = produtoController.getProdutoById(produtoId);
+            if (produto == null) {
+                System.out.println("Produto não encontrado.");
+                continue;
+            }
+
+            float subtotal = produto.getPreco() * quantidade;
+
+            ProdutoHasVenda itemVenda = new ProdutoHasVenda(quantidade, subtotal, produto, null);
+            carrinho.add(itemVenda);
+
+            totalVenda += subtotal;
+            System.out.println("Subtotal do item: " + subtotal);
+            System.out.println("Total da venda até agora: " + totalVenda);
+
+            System.out.println("Deseja adicionar mais itens ao carrinho? (s/n) ou cancelar a venda (0)");
+            String resposta = sc.nextLine();
+            if (resposta.equalsIgnoreCase("n")) {
+                adicionandoItens = false;
+            } else if (resposta.equals("0")) {
+                System.out.println("Deseja cancelar a venda? (s/n)");
+                resposta = sc.nextLine();
+                if (resposta.equalsIgnoreCase("s")) {
+                    carrinho.clear();
+                    totalVenda = 0;
+                    System.out.println("Venda cancelada.");
+                    return carrinho; // Retorna o carrinho vazio em caso de cancelamento da venda
+                }
+            }
+        }
+
+        System.out.println("Escolha a forma de pagamento (Digite o ID da forma de pagamento):");
+        System.out.println("|  1 | Dinheiro                                           |");
+        System.out.println("|  2 | Pix                                                |");
+        System.out.println("|  3 | Cartão de Crédito                                  |");
+        System.out.println("|  4 | Cartão de Débito                                   |");
+        long formaPagamentoId = sc.nextLong();
+        sc.nextLine();
+        FormaPagamento formaPagamento = formaPagController.findFormaPagamentoById(formaPagamentoId);
+
+        if (formaPagamento == null) {
+            System.out.println("Forma de pagamento não encontrada.");
+            return carrinho;
+        }
+
+        if (formaPagamentoId == 3) { // Se for cartão de crédito
+            System.out.println("Quantas parcelas deseja? (1 a 3)");
+            int numParcelas = sc.nextInt();
+            sc.nextLine();
+
+            if (numParcelas < 1 || numParcelas > 3) {
+                System.out.println("Número de parcelas inválido.");
+                return carrinho;
+            }
+
+            // Adiciona juros de acordo com o número de parcelas
+            float juros = 0;
+            if (numParcelas == 2) {
+                juros = 0.05f; // 5% de juros para 2 parcelas
+            } else if (numParcelas == 3) {
+                juros = 0.1f; // 10% de juros para 3 parcelas
+            }
+
+            totalVenda *= (1 + juros); // Aumenta o total da venda com os juros
+        }
+
+        // Confirmar a geração da Nota Fiscal Eletrônica (NFe)
+        System.out.println("Deseja gerar a Nota Fiscal Eletrônica (NFe)? (s/n)");
+        String gerarNfe = sc.nextLine();
+        if (!gerarNfe.equalsIgnoreCase("s")) {
+            System.out.println("Venda cancelada.");
+            return carrinho; // Retorna o carrinho se o usuário não desejar gerar a NFe
+        }
+
+        long nfeValue = generateNfeNumber();
+
+        System.out.println("Concluindo venda...");
+
+        // Criar uma nova instância de venda
+        Vendas venda = new Vendas();
+        venda.setTotal(totalVenda);
+        venda.setFormaPagamento(formaPagamento);
+        venda.setNfe(nfeValue);
+        venda.setUsuario(usuarioLogado);
+
+        // Persistir a venda e os itens
+        vendaController.saveVenda(venda);
+        for (ProdutoHasVenda item : carrinho) {
+            item.setVendas(venda);
+            vendaController.saveProdutoHasVenda(item);
+        }
+
+        // Exibir a Nota Fiscal Eletrônica
+        exibirNFe(carrinho, totalVenda, nfeValue);
+
+        System.out.println("Venda concluída com sucesso!");
+        System.out.println("Nota Fiscal Eletrônica (NFe) gerada com número: " + nfeValue);
+
+        return carrinho;
+    }
+
+
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
     private static void exibirNFe(List<ProdutoHasVenda> carrinho, float totalVenda, long nfeValue) {
         System.out.println("===============================");
         System.out.println("       Nota Fiscal Eletrônica   ");

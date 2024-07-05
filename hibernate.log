@@ -17,6 +17,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-06-01 14:34:43,317 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
 2024-06-01 15:07:31,294 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
 2024-06-01 15:08:54,299 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_usuario_fk' cannot be null
+<<<<<<< HEAD
 2024-06-03 21:03:55,538 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`integrador02`.`vendas`, CONSTRAINT `vendas_ibfk_1` FOREIGN KEY (`id_usuario_fk`) REFERENCES `usuarios` (`id`))
 2024-06-03 21:09:52,356 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`integrador02`.`vendas`, CONSTRAINT `vendas_ibfk_1` FOREIGN KEY (`id_usuario_fk`) REFERENCES `usuarios` (`id`))
 2024-06-03 21:12:27,513 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`integrador02`.`vendas`, CONSTRAINT `vendas_ibfk_1` FOREIGN KEY (`id_usuario_fk`) REFERENCES `usuarios` (`id`))
@@ -81,3 +82,5 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-06-25 20:01:37,282 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
 2024-06-25 20:09:51,573 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
 2024-06-25 20:09:51,582 [AWT-EventQueue-0] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'id_venda_fk' cannot be null
+=======
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd

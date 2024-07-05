@@ -35,4 +35,8 @@ public class FormaPagamento {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd

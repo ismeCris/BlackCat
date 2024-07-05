@@ -57,6 +57,7 @@ public class UsuarioRepository  implements  BasicCrud{
         }
 
 
+<<<<<<< HEAD
         try {
 			em.getTransaction().begin();
         em.merge(user);
@@ -65,6 +66,11 @@ public class UsuarioRepository  implements  BasicCrud{
 			em.getTransaction().rollback();
 		}
         
+=======
+        em.getTransaction().begin();
+        em.merge(user);
+        em.getTransaction().commit();
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
 
         return null;
     }

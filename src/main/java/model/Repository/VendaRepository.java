@@ -22,6 +22,7 @@ public class VendaRepository implements BasicCrud{
     @Override
     public Object create(Object object) {
         Vendas vendas = (Vendas) object;
+<<<<<<< HEAD
         try {
         	em.getTransaction().begin();
         	em.persist(vendas);
@@ -41,10 +42,18 @@ public class VendaRepository implements BasicCrud{
 	        System.err.println("Erro geral: " + e.getMessage());
 	        return null;
 	    }
+=======
+
+        em.getTransaction().begin();
+        em.persist(vendas);
+        em.getTransaction().commit();
+        return findById(vendas.getId());
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
     }
 
     @Override
     public Object update(Object object) {
+<<<<<<< HEAD
         Vendas venda = (Vendas) object;
       try {
     	  em.getTransaction().begin();
@@ -54,6 +63,24 @@ public class VendaRepository implements BasicCrud{
       }catch (Exception e) {
 		em.getTransaction().rollback();
 	}
+=======
+        Usuario user = (Usuario) object;
+
+        // Verificar se a nova senha já está sendo usada por outro usuário
+        Query query = em.createQuery("SELECT u FROM Usuario u WHERE u.senha = :senha AND u.id != :userId");
+        query.setParameter("senha", user.getSenha());
+        query.setParameter("userId", user.getId());
+        List<Usuario> usuariosComMesmaSenha = query.getResultList();
+
+        if (!usuariosComMesmaSenha.isEmpty()) {
+            System.out.println("A senha fornecida já está sendo usada por outro usuário. A senha não foi alterada.");
+            return null;
+        }
+
+        em.getTransaction().begin();
+        em.merge(user);
+        em.getTransaction().commit();
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
 
         return null;
     }
@@ -79,7 +106,11 @@ public class VendaRepository implements BasicCrud{
         return null;
     }
 
+<<<<<<< HEAD
     public List<Vendas> findALl(){
+=======
+    public List<Vendas>findALl(){
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
         return em.createQuery("SELECT v FROM Vendas v ",Vendas.class).getResultList();
     }
 
@@ -89,6 +120,7 @@ public class VendaRepository implements BasicCrud{
         em.getTransaction().commit();
     }
 
+<<<<<<< HEAD
     public ProdutoHasVenda saveProdutoHasVenda(ProdutoHasVenda produtoHasVenda) {
     	try {
     		em.getTransaction().begin();
@@ -112,6 +144,12 @@ public class VendaRepository implements BasicCrud{
         }
         return null;
     	
+=======
+    public void saveProdutoHasVenda(ProdutoHasVenda produtoHasVenda) {
+        em.getTransaction().begin();
+        em.persist(produtoHasVenda);
+        em.getTransaction().commit();
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
     }
 
 }

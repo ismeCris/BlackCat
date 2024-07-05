@@ -32,10 +32,17 @@ public class Vendas {
 	private List<ProdutoHasVenda> itens;
 
 	public Vendas() {
+<<<<<<< HEAD
 
 	}
 
 	public Vendas(Usuario usuario, FormaPagamento formaPagamento, Long id, float total, LocalDateTime data, Long nfe) {
+=======
+		
+	}
+	
+	public Vendas(Usuario usuario, FormaPagamento formaPagamento,Long id, float total, LocalDateTime data, Long nfe) {
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
 		this.usuario = usuario;
 		this.formaPagamento = formaPagamento;
 		this.id = id;
@@ -92,6 +99,10 @@ public class Vendas {
 		this.formaPagamento = formaPagamento;
 	}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
 	public List<ProdutoHasVenda> getItens() {
 		return itens;
 	}
@@ -100,4 +111,9 @@ public class Vendas {
 		this.itens = itens;
 	}
 
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd

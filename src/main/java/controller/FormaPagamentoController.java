@@ -35,6 +35,7 @@ public class FormaPagamentoController {
     public FormaPagamento findFormaPagamentoById(Long id) {
         return formaPagamentoService.findFormaPagamentoById(id); // supondo que você tenha um serviço de forma de pagamento
     }
+<<<<<<< HEAD
     public FormaPagamento findFormaPagamentoByNome(String nome) {
         // Implement the logic to find FormaPagamento by name
         List<FormaPagamento> formas = formaPagamentoService.listarTodasFormasPagamento();
@@ -45,6 +46,8 @@ public class FormaPagamentoController {
         }
         return null;
     }
+=======
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
 
 
 }

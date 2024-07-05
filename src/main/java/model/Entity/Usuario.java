@@ -1,7 +1,10 @@
 package model.Entity;
 
 import javax.persistence.*;
+<<<<<<< HEAD
 import java.util.List;
+=======
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
 
 @Entity
 @Table(name = "usuarios")
@@ -17,8 +20,11 @@ public class Usuario {
     @Column(name = "user_role")
     private boolean userRole;
 
+<<<<<<< HEAD
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
     List<Vendas> vendas;
+=======
+>>>>>>> 9b4857a634fed663df8707b1988046257f763fcd
     public Usuario() {
 
     }
